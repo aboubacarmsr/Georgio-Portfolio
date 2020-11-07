@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    width: 100%;
+    overflow: hidden;
+    background: whitesmoke;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    padding: 1em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    font-family: 'Notable', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 5px;
+}
+
+nav img{
+    width: 3em;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.big-image{
+    position: absolute;
+    width: 350px;
+    top: 90px;
+    left: 332px;
+}
+
+.big-image img{
+    width: 100%;
+    opacity: 0;
+    animation: image-appear 2s linear forwards;
+    animation-delay: 2.2s;
+}
+
+.medium-image{
+    position: absolute;
+    width: 250px;
+    top: 162px;
+    right: 332px;
+}
+
+.medium-image img{
+    width: 100%;
+    opacity: 0;
+    animation: image-appear 2s linear forwards;
+    animation-delay: 2.4s;
+}
+
+@keyframes image-appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #CE5E38;
+    animation: block-appear 2s cubic-bezier(0.19, 1, 0.32, 1) forwards;
+    animation-delay: 1.5s;
+  }
+  
+  .medium-image .block {
+    animation-delay: 2.1s;
+  }
+  
+  @keyframes block-appear {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      left: 0;
+      width: 100%;
+    }
+    100% {
+      left: 100%;
+      width: 0%;
+    }
+}
+
+.bg {
+    position: absolute;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background: #1C1919;
+    z-index: -1;
+}
+
+
+.hero-text{
+    position: absolute;
+    width: 800px;
+    left: 279px;
+    top: 320px;
+}
+
+.hero-text img{
+    width: 100%;
+}
+
+.discover{
+    font-family: 'Notable', sans-serif;
+    position: absolute;
+    right: 300px;
+    bottom: 100px;
+}
+
+.media{
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    display: flex;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 350px;
+    right: -80px;
+}
+
+.media ul{
+    list-style: none;
+}
+
+.media li{
+    display: inline-block;
+    margin-right: 3em;
+}
+
+.bottom-nav{
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    left: 85px;
+    bottom: 50px;
+    font-size: 14px;
+}
+
+.bottom-nav ul{
+    list-style: none;
+}
+
+.bottom-nav .focus{
+    font-size: 24px;
+}
+
+.line{
+    position: absolute;
+    left: 140px;
+    bottom: 50px;
+    width: 2px;
+}
+
+.line img{
+    width: 100%;
+}
